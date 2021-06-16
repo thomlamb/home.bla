@@ -92,3 +92,46 @@ ul{
     width: 200px;
     height: 200px;
 }
+
+// Mask
+
+.mask-wrapper{
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
+    &:before{
+        content: "";
+        display: block;
+        padding-top: 38.3%;
+        overflow: hidden;
+    }
+    .mask{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        .mask-items{
+            width: 33.3333%;
+            float: left;
+            height: 100%;
+            position: relative;
+            .mask-image{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .mask-mask{
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

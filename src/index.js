@@ -25,5 +25,5 @@ import printMe from './print.js';
  
   //  return element;
  }
- gsap.to(".myClass", {duration: 2, x: 1000});
+ gsap.to(".mask-items:nth-child(1)", {duration: 2, x: 100});
  document.body.appendChild(component());
