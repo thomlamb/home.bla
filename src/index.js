@@ -36,6 +36,7 @@ $(document).ready(function() {
    
          // when you hover a toggle show its dropdown menu
          $(".main-menu .menu-link").click(function () {
+             $(".mask-menu").toggleClass('in')
             $(this).parent().toggleClass("show");
             $(this).parent().find(".show").toggleClass("show"); 
           });
