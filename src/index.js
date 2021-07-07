@@ -26,4 +26,28 @@ import printMe from './print.js';
   //  return element;
  }
  gsap.to(".mask-items:nth-child(1)", {duration: 2, x: 100});
+
+
+$(document).ready(function() {
+    // executes when HTML-Document is loaded and DOM is ready
+   // breakpoint and up  
+	
+        console.log("'ggeg")
+   
+         // when you hover a toggle show its dropdown menu
+         $(".main-menu .menu-link").click(function () {
+            $(this).parent().toggleClass("show");
+            $(this).parent().find(".show").toggleClass("show"); 
+          });
+   
+           // hide the menu when the mouse leaves the dropdown
+         $( ".navbar .menu-link" ).mouseleave(function() {
+           $(this).removeClass("show");  
+         });
+     
+           // do something here
+   
+   // document ready  
+   });
+
  document.body.appendChild(component());
